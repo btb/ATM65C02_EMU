@@ -96,7 +96,7 @@ $(APPNAME): $(OBJ)
 
 # Creates the dependecy rules
 ${DEPDIR}/%.d: $(SRCDIR)/%$(EXT)
-	@$(CPP) $(CFLAGS) ${INCLUDEPATH} $< -MM -MT $(@:${DEPDIR}%.d=$(OBJDIR)/%.o) >$@
+	@$(CPP) $(CFLAGS) ${INCLUDEPATH} $< -MM -MT $(@:${DEPDIR}%.d=$(OBJDIR)%.o) >$@
 
 # Includes all .h files
 -include $(DEP)

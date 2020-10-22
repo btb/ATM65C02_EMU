@@ -218,7 +218,7 @@ private:
 		}
 		bus.via.write(0x000E, ~0x80);
 		if(bus.loadROM(rom_file) != 0){
-			printf("ROM Binary file \"%s\" not found!\n", rom_file);
+			printf("ROM Binary file \"%s\" not found!\n", rom_file.c_str());
 			return false;
 		}
 		// Extract dissassembly

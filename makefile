@@ -10,6 +10,13 @@ INCLUDEPATH = -I/home/ali/include/
 LDFLAGS = -lX11 -lGL -lpthread -lpng -lstdc++fs
 DBFLAGS = -ggdb
 
+# Mac OS
+# CC = clang++
+# CXXFLAGS = -Wall -g -arch x86_64 -std=c++17 -mmacosx-version-min=10.15
+# INCLUDEPATH = 
+# LDFLAGS = -lpthread -lpng -framework OpenGL -framework GLUT
+# DBFLAGS = -ggdb
+
 # Makefile settings - Can be customized.
 APPNAME = myapp
 EXT = .cpp
